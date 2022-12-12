@@ -3,7 +3,7 @@ Thread.Sleep(1800);
 Console.WriteLine("--------------//--------------");
 Thread.Sleep(1800);
 
-Console.WriteLine("--- CAIXA ELETRÔNICO  ---");
+Console.WriteLine("   --- CAIXA ELETRÔNICO  ---");
 
 Console.WriteLine("--------------//--------------");
 Console.Beep();
@@ -12,17 +12,15 @@ Thread.Sleep(1500);
 
 
 Console.WriteLine("NOTAS NESTE CAIXA: ");
-Console.WriteLine("R$2, R$5, R$10 , R$ 20, R$ 50,R$ 100 e R$ 200 reaiS");
+Console.WriteLine("R$2, R$5, R$10 , R$ 20, R$ 50,R$ 100 e R$ 200 Reais");
 
 
 
 Thread.Sleep(1500);
 
- {
-Console.ForegroundColor = ConsoleColor.DarkRed ;
+ 
 Console.WriteLine("BANCOS DISPONIVEIS PARA SAQUE  ");
 
-}
 
 Thread.Sleep(1500);
 
@@ -72,32 +70,34 @@ void tentenovamente (int x)
 {
     if (x == 1)
     {
-        Console.WriteLine("Banco 1");
+        Console.WriteLine("BANCO DISPONIVEL");
     }
     else if (x == 2)
     {
-        Console.WriteLine("Banco 2");
+        Console.WriteLine("BANCO DISPONIVEL");
 
     }
     else if (x == 3)
     {
-        Console.WriteLine("Banco 3");
+        Console.WriteLine("BANCO DISPONIVEL");
 
     }
     else if (x == 4)
     {
-        Console.WriteLine("Banco 4");
+        Console.WriteLine("BANCO DISPONIVEL");
 
     }
     else if (x >= 5)
     {
-        Console.WriteLine("Erro de Banco");
+        Console.WriteLine("BANCO INDISPONÍVEL");
     }
 if (n1 < 5)
 {
-Thread.Sleep(2500);
 
-Console.WriteLine("AGUARDE AS CONTAGEM DA NOTAS ");
+Console.Write("DIGITE O VALOR: ");
+decimal valorsaque = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("\nAGUARDE AS CONTAGEM DA NOTAS\n ");
 Thread.Sleep(1500);
 Console.Beep();
 Console.Beep();
